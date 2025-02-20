@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Junior Software Developer",
+    "companyName": "iSiteTV",
+    "timeframe": "2024 - PRESENT",
+    "description": "Building internal and client-facing web applications, focusing on scalable solutions using modern frameworks and best practices.",
+    "tags": ["JavaScript", "TypeScript", "Svelte/SvelteKit", "Node.js", "Tailwind CSS"]
+  },
+  {
+    "title": "UX Designer Intern",
+    "companyName": "HubinIT",
+    "timeframe": "2020 - 2021",
+    "description": "Led UI design for a large e-commerce platform and enhanced a task management app through user research and competitive analysis. Contributed to platform rebranding, improving usability and earning positive feedback.",
+    "tags": ["Figma", "UI Design", "User Research", "Prototyping", "Adobe XD"]
+  },
+  {
+    "title": "Computer Science Student",
+    "companyName": "Nottingham Trent University",
+    "timeframe": "2019 - 2023",
+    "description": "Built a solid foundation in software development, algorithms, and UX design through practical coursework and collaborative projects. Applied modern programming languages to solve real-world problems.",
+    "tags": ["OOP", "Software Design", "Algorithms", "Web Development", "UX Design"]
+  }
+]
