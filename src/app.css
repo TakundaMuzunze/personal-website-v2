@@ -13,3 +13,15 @@
 *::-ms-scrollbar {
   display: none;
 }
+@theme {
+  --color-light-blue: #dbeafe;
+  --color-dark-blue: #006fff;
+
+  /* fonts	*/
+  --font-light: 'OpenSansLight', sans-serif;
+  --font-italic: 'OpenSansItalic', sans-serif;
+  --font-regular: 'OpenSansRegular', sans-serif;
+  --font-semibold: 'OpenSansSemiBold', sans-serif;
+  --font-bold: 'OpenSansBold', sans-serif;
+  --font-caveat: 'Caveat', cursive;
+}
