@@ -1,0 +1,18 @@
+[
+  {
+    "image": "/kickTrivia.png",
+    "title": "KIckTrivia",
+    "description": "A fast-paced football quiz game built with JavaScript. Test your football knowledge across diverse categories and challenge yourself to become a trivia champion.",
+    "skillTags": ["Javascript", "HTML", "CSS"],
+    "liveDemo": "https://kicktrivia.netlify.app/",
+    "repo": "https://github.com/TakundaMuzunze/FootballQuizApp?tab=readme-ov-file"
+  },
+  {
+    "image": "/taskflow.png",
+    "title": "Taskflow",
+    "description": "A sleek task management app using HTML, CSS, and JavaScript. Stay organized and streamline your daily workflow with ease.",
+    "skillTags": ["Javascript", "HTML", "CSS"],
+    "liveDemo": "https://taskflow-app.netlify.app/",
+    "repo": "https://github.com/TakundaMuzunze/Taskflow?tab=readme-ov-file"
+  }
+]

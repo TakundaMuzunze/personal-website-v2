@@ -5,3 +5,12 @@ type Experience = {
   description: string;
   tags: string;
 };
+
+type ProjectCard = {
+  image: string;
+  title: string;
+  description: string;
+  skillTags: string[];
+  liveDemo: string;
+  repo: string;
+};
