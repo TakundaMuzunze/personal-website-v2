@@ -65,13 +65,13 @@
     bind:this={swiperEl}
     slides-per-view="1"
     loop="false"
-    class="w-full max-w-full min-w-[250px] px-5 sm:max-w-[400px] xl:max-h-[450px] xl:max-w-[600px]"
+    class="w-full max-w-full min-w-[250px] px-5 sm:max-w-[400px] lg:max-w-[500px] xl:max-h-[450px] xl:max-w-[600px]"
   >
     {#each previousExperiences as experience}
       <swiper-slide class="relative flex h-full w-full flex-col justify-between gap-5 rounded-xl p-6 shadow-lg hover:-translate-y-2 hover:shadow-2xl">
         <h3 class="text-lg font-semibold md:text-xl">{experience.title}</h3>
         <p>{experience.companyName}</p>
-        <p class="md:text-lg">{experience.description}</p>
+        <p class="lg:text-lg">{experience.description}</p>
 
         <div class="flex flex-wrap gap-2">
           {#each experience.tags as tag}

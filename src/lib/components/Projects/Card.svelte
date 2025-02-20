@@ -25,7 +25,7 @@
 <div class="flex flex-col items-start justify-start gap-10 md:flex-row">
   {#each projectInfo as project}
     <div
-      class="hover:border-light-blue flex w-full flex-col overflow-hidden rounded-2xl border border-neutral-300 shadow-lg shadow-neutral-300 transition-all duration-100 hover:border-2 sm:w-[90%] md:w-[45%] lg:w-1/2"
+      class="hover:border-light-blue flex w-full flex-col overflow-hidden rounded-2xl border border-neutral-300 shadow-lg shadow-neutral-300 transition-all duration-100 hover:border-2 sm:w-[90%] md:w-[45%] xl:w-1/2"
     >
       <img class="block h-64 w-full object-contain" src={project.image} alt={project.title} />
       <div class="flex flex-col gap-4 p-5">
