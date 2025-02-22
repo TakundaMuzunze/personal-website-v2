@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { links } from '../stores/data.stores.svelte';
+
   import { gsap } from 'gsap/dist/gsap';
   import { onMount } from 'svelte';
 
@@ -67,10 +69,12 @@
       <h2 class="hero-greeting text-lg lg:text-2xl">Hello there<span class="wave-emoji inline-block">👋</span>. My name is,</h2>
       <h1 class="hero-name overflow-hidden text-3xl font-bold whitespace-nowrap lg:text-5xl">Takunda Muzunze</h1>
       <p class="hero-tagline text-lg lg:text-2xl">I design and develop user-centric experiences</p>
-      <button
-        class="hero-button w-fit transform cursor-pointer rounded-xl bg-[#006FFF] px-4 py-3 font-semibold text-white transition-transform duration-300 hover:scale-105 lg:text-lg"
-        >Get in touch</button
-      >
+      <a href="#contact">
+        <button
+          class="hero-button w-fit transform cursor-pointer rounded-xl bg-[#006FFF] px-4 py-3 font-semibold text-white transition-transform duration-300 hover:scale-105 lg:text-lg"
+          >Get in touch</button
+        >
+      </a>
     </div>
     <div class="hero-image">
       <img class="size-48 lg:size-72" src="/headshot.svg" alt="Head shot" />

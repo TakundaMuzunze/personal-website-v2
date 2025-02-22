@@ -2,7 +2,7 @@
   {
     "image": "/kickTrivia.png",
     "title": "KIckTrivia",
-    "description": "A fast-paced football quiz game built with JavaScript. Test your football knowledge across diverse categories and challenge yourself to become a trivia champion.",
+    "description": "A fast-paced football quiz game to test your football knowledge across diverse categories and challenge yourself to become a trivia champion.",
     "skillTags": ["Javascript", "HTML", "CSS"],
     "liveDemo": "https://kicktrivia.netlify.app/",
     "repo": "https://github.com/TakundaMuzunze/FootballQuizApp?tab=readme-ov-file"
