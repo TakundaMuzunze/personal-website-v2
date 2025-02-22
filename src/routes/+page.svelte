@@ -11,10 +11,22 @@
 
 <main class="min-h-screen scroll-smooth">
   <Header />
+  <section id="home"></section>
   <Hero />
-  <AboutMe />
-  <Experience />
-  <Projects />
-  <ContactSection />
+  <section id="about">
+    <AboutMe />
+  </section>
+
+  <section id="experience">
+    <Experience />
+  </section>
+
+  <section id="projects">
+    <Projects />
+  </section>
+  <section id="contact">
+    <ContactSection />
+  </section>
+
   <Footer />
 </main>

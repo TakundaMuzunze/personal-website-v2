@@ -1,16 +1,33 @@
 <script lang="ts">
+  import { onMount } from 'svelte';
   import { links } from '../stores/data.stores.svelte';
   import { fly } from 'svelte/transition';
+
+  let scrollProgress = $state(0);
 
   let isMenuOpen = $state(false);
 
   function openMenu(event: MouseEvent): void {
     isMenuOpen = true;
   }
+
+  onMount(() => {
+    function updateScrollProgress() {
+      const scrollTop = window.scrollY;
+      const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+
+      scrollProgress = (scrollTop / scrollHeight) * 100;
+
+      scrollProgress = Math.min(Math.max(scrollProgress, 0), 100);
+    }
+
+    window.addEventListener('scroll', updateScrollProgress);
+    return () => window.removeEventListener('scroll', updateScrollProgress);
+  });
 </script>
 
-<header class=" sticky top-0 z-2 flex w-full">
-  <div class=" flex w-full flex-row items-center justify-between border-b-2 border-gray-200 p-5">
+<header class=" sticky top-0 z-2 flex w-full bg-white">
+  <div class=" flex w-full flex-row items-center justify-between p-5">
     <h1 class="text-xl font-bold">TM.</h1>
     <button onclick={openMenu} class="cursor-pointer" aria-label="open navigation menu">
       <svg class="size-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
@@ -19,6 +36,9 @@
         /></svg
       >
     </button>
+  </div>
+  <div class="bg-light-blue absolute bottom-0 h-1 w-full">
+    <progress class="w-full" max={100} value={scrollProgress} data-testval={scrollProgress}></progress>
   </div>
 </header>
 
@@ -30,12 +50,12 @@
     onclick={() => (isMenuOpen = false)}
     onkeydown={(event) => event.key === 'Escape' && (isMenuOpen = false)}
     transition:fly={{ duration: 200 }}
-    class="absolute inset-0 z-10 bg-gray-200/50 backdrop-blur-lg"
+    class="fixed inset-0 z-10 bg-gray-200/50 backdrop-blur-lg"
   ></div>
 
   <div
     transition:fly|global={{ x: 20, duration: 200 }}
-    class="absolute top-0 right-0 z-20 flex h-full w-[75vw] flex-col items-center justify-center bg-white p-5 shadow-lg lg:w-[30vw]"
+    class="fixed top-0 right-0 z-20 flex h-full w-[75vw] flex-col items-center justify-center bg-white p-5 shadow-lg lg:w-[30vw]"
   >
     <button onclick={() => (isMenuOpen = false)} class="absolute top-5 right-5" aria-label="open nav menu">
       <svg class="size-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
@@ -46,8 +66,22 @@
     </button>
     {#each links.navLinks as link}
       <ul class="mb-4">
-        <li class=" font-semibold hover:text-gray-400 lg:text-lg xl:text-2xl">{link.label}</li>
+        <li class="font-semibold hover:text-gray-400 lg:text-lg xl:text-2xl">
+          <a href={link.href} onclick={() => (isMenuOpen = false)}>{link.label}</a>
+        </li>
       </ul>
     {/each}
   </div>
 {/if}
+
+<style>
+  progress::-webkit-progress-bar {
+    background-color: #dbeafe;
+    border-radius: 9999px;
+    height: 2px;
+  }
+  progress::-webkit-progress-value {
+    background-color: #006fff;
+    border-radius: 9999px;
+  }
+</style>
