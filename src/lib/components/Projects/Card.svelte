@@ -5,7 +5,7 @@
 
   async function fetchProjects() {
     try {
-      const response = await fetch('/src/data/projects.json');
+      const response = await fetch('/data/projects.json');
 
       if (!response.ok) {
         console.error('Error fetching projects. Please refresh page and try again.');

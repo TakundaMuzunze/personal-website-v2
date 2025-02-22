@@ -17,7 +17,7 @@
 
   async function fetchData() {
     try {
-      const response = await fetch('/src/data/experience.json');
+      const response = await fetch('/data/experience.json');
       previousExperiences = await response.json();
     } catch (error) {
       console.error('Error fetching data:', error);
