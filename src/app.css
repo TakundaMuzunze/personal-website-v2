@@ -13,6 +13,12 @@
 *::-ms-scrollbar {
   display: none;
 }
+
+html,
+body {
+  overflow-x: hidden;
+}
+
 @theme {
   --color-light-blue: #dbeafe;
   --color-dark-blue: #006fff;

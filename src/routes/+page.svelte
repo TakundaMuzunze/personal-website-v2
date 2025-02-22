@@ -11,8 +11,10 @@
 
 <main class="min-h-screen scroll-smooth">
   <Header />
-  <section id="home"></section>
-  <Hero />
+  <section id="home">
+    <Hero />
+  </section>
+
   <section id="about">
     <AboutMe />
   </section>
@@ -24,6 +26,7 @@
   <section id="projects">
     <Projects />
   </section>
+
   <section id="contact">
     <ContactSection />
   </section>

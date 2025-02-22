@@ -26,7 +26,7 @@
   });
 </script>
 
-<header class=" sticky top-0 z-2 flex w-full bg-white">
+<header class=" fixed top-0 z-2 flex w-full bg-white">
   <div class=" flex w-full flex-row items-center justify-between p-5">
     <h1 class="text-xl font-bold">TM.</h1>
     <button onclick={openMenu} class="cursor-pointer" aria-label="open navigation menu">
