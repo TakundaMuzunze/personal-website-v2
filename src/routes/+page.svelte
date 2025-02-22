@@ -4,6 +4,8 @@
   import Hero from '$lib/components/Hero.svelte';
   import ProjectSection from '$lib/components/Experience/Experience.svelte';
   import Projects from '$lib/components/Projects/Projects.svelte';
+
+  import ContactSection from '$lib/components/ContactSection/ContactSection.svelte';
 </script>
 
 <main class="h-screen snap-y snap-mandatory overflow-y-auto scroll-smooth">
@@ -12,4 +14,5 @@
   <AboutMe />
   <ProjectSection />
   <Projects />
+  <ContactSection />
 </main>
