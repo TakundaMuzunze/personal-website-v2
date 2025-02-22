@@ -50,7 +50,7 @@
     {#each previousExperiences as experience, i}
       <button
         on:click={() => scrollToSlide(i)}
-        class="cursor-pointer rounded-lg px-2 py-2 transition duration-200 md:px-4"
+        class="cursor-pointer rounded-lg px-2 py-2 transition duration-300 md:px-4"
         class:bg-dark-blue={activeIndex === i}
         class:bg-light-blue={activeIndex !== i}
         class:text-white={activeIndex === i}

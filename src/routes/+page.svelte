@@ -9,7 +9,7 @@
   import Footer from '$lib/components/Footer/Footer.svelte';
 </script>
 
-<main class="h-screen scroll-smooth">
+<main class="min-h-screen scroll-smooth">
   <Header />
   <Hero />
   <AboutMe />

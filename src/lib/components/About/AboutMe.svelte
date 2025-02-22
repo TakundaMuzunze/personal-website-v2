@@ -34,7 +34,7 @@
   });
 </script>
 
-<section class="about-section mx-auto flex h-screen max-w-5xl items-center justify-center p-5">
+<section class="about-section mx-auto flex min-h-screen max-w-5xl items-center justify-center p-5">
   <div class="flex flex-col items-center gap-10 md:flex-row lg:gap-20">
     <div class="content-left flex max-w-[468px] flex-col gap-3 lg:gap-5">
       <h3 class="font-semibold text-[#006FFF] uppercase md:text-lg lg:text-xl">About me</h3>
