@@ -9,7 +9,7 @@
   }
 </script>
 
-<header class=" flex w-full snap-start">
+<header class=" flex w-full">
   <div class="flex w-full flex-row items-center justify-between border-b-2 border-gray-200 p-5">
     <h1 class="text-xl font-bold">TM.</h1>
     <button onclick={openMenu} class="cursor-pointer" aria-label="open navigation menu">

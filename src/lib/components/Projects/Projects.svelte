@@ -2,7 +2,7 @@
   import Card from './Card.svelte';
 </script>
 
-<section class="mx-auto flex min-h-screen max-w-5xl snap-start items-center p-5">
+<section class="mx-auto flex min-h-screen max-w-5xl items-center p-5">
   <div class="flex w-full flex-col items-start justify-start gap-10 lg:gap-20">
     <div class="flex max-w-2xl flex-col gap-3 lg:gap-5">
       <h3 class="font-semibold text-[#006FFF] uppercase md:text-lg lg:text-xl">My Projects</h3>
