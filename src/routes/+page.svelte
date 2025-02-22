@@ -2,7 +2,7 @@
   import AboutMe from '$lib/components/About/AboutMe.svelte';
   import Header from '$lib/components/Header.svelte';
   import Hero from '$lib/components/Hero.svelte';
-  import ProjectSection from '$lib/components/Experience/Experience.svelte';
+  import Experience from '$lib/components/Experience/Experience.svelte';
   import Projects from '$lib/components/Projects/Projects.svelte';
 
   import ContactSection from '$lib/components/ContactSection/ContactSection.svelte';
@@ -13,7 +13,7 @@
   <Header />
   <Hero />
   <AboutMe />
-  <ProjectSection />
+  <Experience />
   <Projects />
   <ContactSection />
   <Footer />
