@@ -1,31 +1,33 @@
 <script lang="ts">
-  import { onMount, onDestroy } from 'svelte';
+  import { onMount } from 'svelte';
 
-  let isVisible = false;
+  let scrollUpButton: HTMLButtonElement;
 
-  function handleScroll() {
-    isVisible = window.scrollY > 20;
+  function addOpacity() {
+    if (window.scrollY > 20) {
+      scrollUpButton.style.opacity = '1';
+    } else {
+      scrollUpButton.style.opacity = '0.5';
+    }
   }
-
-  onMount(() => {
-    window.addEventListener('scroll', handleScroll);
-  });
-
-  onDestroy(() => {
-    window.removeEventListener('scroll', handleScroll);
-  });
 
   function scrollUp() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
+
+  onMount(() => {
+    window.addEventListener('scroll', addOpacity);
+    addOpacity();
+
+    return () => window.removeEventListener('scroll', addOpacity);
+  });
 </script>
 
 <button
-  on:click={scrollUp}
+  bind:this={scrollUpButton}
+  onclick={scrollUp}
   aria-label="Scroll to top"
-  class="bg-dark-blue fixed right-5 bottom-[5vh] cursor-pointer rounded-full p-2 transition-opacity duration-200 lg:right-10"
-  class:opacity-50={!isVisible}
-  class:opacity-100={isVisible}
+  class="bg-dark-blue fixed right-5 bottom-[5vh] cursor-pointer rounded-full p-2 opacity-50 transition-opacity duration-200 lg:right-10"
 >
   <svg class="mx-auto size-5" xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 448 512">
     <path
