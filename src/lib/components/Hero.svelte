@@ -1,6 +1,4 @@
 <script lang="ts">
-  import { links } from '../stores/data.stores.svelte';
-
   import { gsap } from 'gsap/dist/gsap';
   import { onMount } from 'svelte';
 
@@ -66,12 +64,12 @@
 <section class="mx-auto flex min-h-screen max-w-5xl items-center justify-center p-5">
   <div class="flex flex-col-reverse gap-10 md:flex-row md:gap-40">
     <div class="flex max-w-[468px] flex-col gap-3 lg:gap-5">
-      <h2 class="hero-greeting text-lg lg:text-2xl">Hello there<span class="wave-emoji inline-block">👋</span>. My name is,</h2>
-      <h1 class="hero-name overflow-hidden text-3xl font-bold whitespace-nowrap lg:text-5xl">Takunda Muzunze</h1>
-      <p class="hero-tagline text-lg lg:text-2xl">I design and develop user-centric experiences</p>
+      <h2 class="hero-greeting text-body-text text-lg lg:text-2xl">Hello there<span class="wave-emoji inline-block">👋</span>. My name is,</h2>
+      <h1 class="hero-name text-heading-text overflow-hidden text-3xl font-bold whitespace-nowrap lg:text-5xl">Takunda Muzunze</h1>
+      <p class="hero-tagline text-body-text text-lg lg:text-2xl">I design and develop user-centric experiences</p>
       <a href="#contact">
         <button
-          class="hero-button w-fit transform cursor-pointer rounded-xl bg-[#006FFF] px-4 py-3 font-semibold text-white transition-transform duration-300 hover:scale-105 lg:text-lg"
+          class="hero-button bg-main-btn w-fit transform cursor-pointer rounded-xl px-4 py-3 font-semibold text-white transition-transform duration-300 hover:scale-105 lg:text-lg"
           >Get in touch</button
         >
       </a>

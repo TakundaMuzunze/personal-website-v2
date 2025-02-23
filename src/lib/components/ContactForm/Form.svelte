@@ -57,27 +57,27 @@
       type="text"
       bind:value={name}
       placeholder="Full name"
-      class=" plcaeholder:text-sm col-span-1 rounded-2xl border-2 border-black/20 p-4 shadow-lg"
+      class=" placeholder:text-body-text border-card-bg bg-card-bg col-span-1 rounded-2xl border-2 p-4 text-white shadow-lg placeholder:text-sm md:placeholder:text-base"
     />
     <input
       type="text"
       bind:value={email}
       placeholder="Email"
-      class=" plcaeholder:text-sm col-span-1 rounded-2xl border-2 border-black/20 p-4 shadow-lg"
+      class=" placeholder:text-body-text border-card-bg bg-card-bg col-span-1 rounded-2xl border-2 p-4 text-white shadow-lg placeholder:text-sm md:placeholder:text-base"
     />
     <textarea
       bind:value={message}
       placeholder="Message"
       rows="3"
       oninput={autoResize}
-      class=" plcaeholder:text-sm col-span-1 w-full resize-none rounded-2xl border-2 border-black/20 p-5 shadow-lg"
+      class=" placeholder:text-body-text border-card-bg bg-card-bg col-span-1 w-full resize-none rounded-2xl border-2 p-5 text-white shadow-lg placeholder:text-sm md:placeholder:text-base"
     ></textarea>
 
     <div class="mx-auto">
       <button
         disabled={disabledSubmission}
         type="submit"
-        class="bg-dark-blue col-span-1 w-fit cursor-pointer rounded-xl px-4 py-2 font-bold text-white disabled:opacity-50 xl:px-8 xl:py-3 xl:text-base"
+        class="bg-main-btn col-span-1 w-fit cursor-pointer rounded-xl px-4 py-2 font-bold text-white disabled:opacity-50 xl:px-8 xl:py-3 xl:text-base"
         >Submit</button
       >
     </div>

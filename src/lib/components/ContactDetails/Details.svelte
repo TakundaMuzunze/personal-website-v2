@@ -5,14 +5,15 @@
 
 <div class=" flex flex-col justify-start gap-10">
   <div class="flex flex-col gap-1">
-    <h3 class="text-lg font-bold lg:text-3xl">Location</h3>
-    <p class="lg:text-xl">Essex, United Kingdom</p>
+    <h3 class="text-heading-text text-lg font-bold lg:text-3xl">Location</h3>
+    <p class="text-body-text lg:text-xl">Essex, United Kingdom</p>
   </div>
   <div class="flex flex-col gap-2">
-    <h3 class="text-lg font-bold lg:text-3xl">Social Links</h3>
+    <h3 class="text-heading-text text-lg font-bold lg:text-3xl">Social Links</h3>
     <div class="flex flex-row justify-start gap-4">
       <a href={linkedIn} target="_blank" aria-label="Linkedin Profile">
         <svg
+          fill="#94a1b2"
           class="h-6 w-6 transition-transform duration-200 hover:-translate-y-1 md:h-8 md:w-8"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 496 512"
@@ -24,6 +25,7 @@
       </a>
       <a href={github} target="_blank" aria-label="Github Profile">
         <svg
+          fill="#94a1b2"
           class="h-6 w-6 transition-transform duration-200 hover:-translate-y-1 md:h-8 md:w-8"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 448 512"

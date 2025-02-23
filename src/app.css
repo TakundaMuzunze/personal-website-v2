@@ -17,11 +17,18 @@
 html,
 body {
   overflow-x: hidden;
+  background-color: #242629;
 }
 
 @theme {
   --color-light-blue: #dbeafe;
   --color-dark-blue: #006fff;
+  --color-main-btn: #7f5af0;
+  --color-btn-text: #fffffe;
+  --color-heading-text: #fffffe;
+  --color-body-text: #94a1b2;
+  --color-progress-value: #2cb67d;
+  --color-card-bg: #16161a;
 
   /* fonts	*/
   --font-light: 'OpenSansLight', sans-serif;

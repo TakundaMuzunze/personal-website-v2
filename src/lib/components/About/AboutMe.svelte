@@ -37,13 +37,13 @@
 <section class="about-section mx-auto flex min-h-screen max-w-5xl items-center justify-center p-5">
   <div class="flex flex-col items-center gap-10 md:flex-row lg:gap-20">
     <div class="content-left flex max-w-[468px] flex-col gap-3 lg:gap-5">
-      <h3 class="font-semibold text-[#006FFF] uppercase md:text-lg lg:text-xl">About me</h3>
-      <h2 class="text-2xl font-bold capitalize md:text-3xl lg:text-4xl">The developer behind the screen</h2>
-      <p class="lg:text-lg">
+      <h3 class="text-body-text font-semibold uppercase md:text-lg lg:text-xl">About me</h3>
+      <h2 class="text-heading-text text-2xl font-bold capitalize md:text-3xl lg:text-4xl">The developer behind the screen</h2>
+      <p class="text-body-text lg:text-lg">
         Hey, I'm Takunda! A frontend developer passionate about crafting smooth, accessible, and user-friendly web experiences. I love turning ideas
         into intuitive and engaging applications.
       </p>
-      <p class="lg:text-lg">
+      <p class="text-body-text lg:text-lg">
         My focus is on building clean, performant interfaces that make the web a joy to use—whether it's refining animations, optimizing user flows,
         or experimenting with new UI patterns
       </p>
