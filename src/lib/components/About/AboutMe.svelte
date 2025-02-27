@@ -45,7 +45,7 @@
       </p>
       <p class="text-body-text lg:text-lg">
         My focus is on building clean, performant interfaces that make the web a joy to use—whether it's refining animations, optimizing user flows,
-        or experimenting with new UI patterns
+        or experimenting with new UI patterns.
       </p>
     </div>
     <div class="about-image w-full max-w-[300px] md:max-w-[400px] lg:max-w-[468px]">
