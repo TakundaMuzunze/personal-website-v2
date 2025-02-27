@@ -27,7 +27,7 @@
     <div
       class=" bg-card-bg border-card-bg flex w-full flex-col overflow-hidden rounded-2xl border shadow-2xl shadow-[#16161a] transition-all duration-100 sm:w-[90%] md:w-[45%] xl:w-1/2"
     >
-      <img class="block h-64 w-fit" src={project.image} alt={project.title} />
+      <img class=" h-auto max-h-64 w-full object-contain" src={project.image} alt={project.title} />
       <div class="flex flex-col gap-4 p-5">
         <h3 class="text-heading-text text-lg font-semibold lg:text-xl">{project.title}</h3>
         <p class="text-body-text">{project.description}</p>

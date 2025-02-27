@@ -48,9 +48,9 @@
         or experimenting with new UI patterns
       </p>
     </div>
-    <div class="about-image">
+    <div class="about-image w-full max-w-[300px] md:max-w-[400px] lg:max-w-[468px]">
       <img
-        class="my-auto size-fit rotate-12 drop-shadow-[8px_8px_15px_rgba(0,0,0,0.5)] transition-transform duration-300 hover:scale-105"
+        class="my-auto h-auto w-full rotate-12 object-cover drop-shadow-[8px_8px_15px_rgba(0,0,0,0.5)] transition-transform duration-300 hover:scale-105"
         src="/code-snippet.png"
         alt="Code Snippet"
       />

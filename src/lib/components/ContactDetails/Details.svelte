@@ -11,7 +11,7 @@
   <div class="flex flex-col gap-2">
     <h3 class="text-heading-text text-lg font-bold lg:text-3xl">Social Links</h3>
     <div class="flex flex-row justify-start gap-4">
-      <a href={linkedIn} target="_blank" aria-label="Linkedin Profile">
+      <a href={github} target="_blank" aria-label="Github Profile">
         <svg
           fill="#94a1b2"
           class="h-6 w-6 transition-transform duration-200 hover:-translate-y-1 md:h-8 md:w-8"
@@ -23,7 +23,7 @@
           />
         </svg>
       </a>
-      <a href={github} target="_blank" aria-label="Github Profile">
+      <a href={linkedIn} target="_blank" aria-label="Linkedin Profile">
         <svg
           fill="#94a1b2"
           class="h-6 w-6 transition-transform duration-200 hover:-translate-y-1 md:h-8 md:w-8"

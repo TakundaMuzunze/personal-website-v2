@@ -21,8 +21,6 @@ body {
 }
 
 @theme {
-  --color-light-blue: #dbeafe;
-  --color-dark-blue: #006fff;
   --color-main-btn: #7f5af0;
   --color-btn-text: #fffffe;
   --color-heading-text: #fffffe;
@@ -36,5 +34,4 @@ body {
   --font-regular: 'OpenSansRegular', sans-serif;
   --font-semibold: 'OpenSansSemiBold', sans-serif;
   --font-bold: 'OpenSansBold', sans-serif;
-  --font-caveat: 'Caveat', cursive;
 }
