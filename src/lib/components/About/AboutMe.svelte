@@ -40,7 +40,7 @@
       <h3 class="text-body-text font-semibold uppercase md:text-lg lg:text-xl">About me</h3>
       <h2 class="text-heading-text text-2xl font-bold capitalize md:text-3xl lg:text-4xl">The developer behind the screen</h2>
       <p class="text-body-text lg:text-lg">
-        Hey, I'm Takunda! A frontend developer passionate about crafting smooth, accessible, and user-friendly web experiences. I love turning ideas
+        Hello, I'm Takunda! A software developer passionate about crafting smooth, accessible, and user-friendly web experiences. I love turning ideas
         into intuitive and engaging applications.
       </p>
       <p class="text-body-text lg:text-lg">

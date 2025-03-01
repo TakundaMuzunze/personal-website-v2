@@ -59,10 +59,11 @@
       <Card />
     </div>
     <div class="view-more-btn mx-auto flex justify-center">
-      <a href="https://github.com/TakundaMuzunze"
-        ><button class="bg-main-btn w-fit cursor-pointer rounded-xl px-4 py-2 font-bold text-white xl:px-8 xl:py-3 xl:text-base"
-          >View more
-        </button></a
+      <a href="https://github.com/TakundaMuzunze" target="_blank">
+        <button
+          class="hero-button bg-main-btn font-regular w-fit transform cursor-pointer rounded-xl px-4 py-3 text-white transition-transform duration-300 hover:scale-105 xl:px-8 xl:py-3"
+          >View more</button
+        ></a
       >
     </div>
   </div>

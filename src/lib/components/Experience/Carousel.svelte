@@ -75,7 +75,7 @@
 
         <div class="flex flex-wrap gap-2">
           {#each experience.tags as tag}
-            <span class="bg-main-btn rounded-full px-3 py-1 text-xs font-semibold text-white">
+            <span class="bg-main-btn font-regular rounded-full px-3 py-1 text-xs text-white">
               {tag}
             </span>
           {/each}
