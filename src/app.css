@@ -18,6 +18,7 @@ html,
 body {
   overflow-x: hidden;
   background-color: #242629;
+  font-family: 'Inter', sans-serif;
 }
 
 @theme {
@@ -27,11 +28,9 @@ body {
   --color-body-text: #94a1b2;
   --color-progress-value: #2cb67d;
   --color-card-bg: #16161a;
+}
 
-  /* fonts	*/
-  --font-light: 'OpenSansLight', sans-serif;
-  --font-italic: 'OpenSansItalic', sans-serif;
-  --font-regular: 'OpenSansRegular', sans-serif;
-  --font-semibold: 'OpenSansSemiBold', sans-serif;
-  --font-bold: 'OpenSansBold', sans-serif;
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter-VariableFont_opsz,wght.ttf');
 }
