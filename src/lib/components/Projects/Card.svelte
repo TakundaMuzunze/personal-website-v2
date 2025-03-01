@@ -33,7 +33,7 @@
         <p class="text-body-text">{project.description}</p>
         <div class="flex flex-wrap gap-2">
           {#each project.skillTags as tools}
-            <span class="bg-main-btn rounded-full px-3 py-1 text-xs font-semibold text-white">
+            <span class="bg-main-btn font-regular rounded-full px-3 py-1 text-xs text-white">
               {tools}
             </span>
           {/each}
