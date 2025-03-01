@@ -21,16 +21,27 @@
       opacity: 0,
       duration: 0.8,
       ease: 'power2.out',
-    }).from(
-      '.projects-cards',
-      {
-        y: 50,
-        opacity: 0,
-        duration: 0.8,
-        ease: 'power2.out',
-      },
-      '-=0.4',
-    );
+    })
+      .from(
+        '.projects-cards',
+        {
+          y: 50,
+          opacity: 0,
+          duration: 0.8,
+          ease: 'power2.out',
+        },
+        '-=0.4',
+      )
+      .from(
+        '.view-more-btn',
+        {
+          y: 100, // Adjust as needed for the swoop effect
+          opacity: 0,
+          duration: 0.8,
+          ease: 'power2.out',
+        },
+        '-=0.4', // Overlapping the animation slightly with the previous one
+      );
   });
 </script>
 
@@ -46,6 +57,13 @@
     </div>
     <div class="projects-cards w-full">
       <Card />
+    </div>
+    <div class="view-more-btn mx-auto flex justify-center">
+      <a href="https://github.com/TakundaMuzunze"
+        ><button class="bg-main-btn w-fit cursor-pointer rounded-xl px-4 py-2 font-bold text-white xl:px-8 xl:py-3 xl:text-base"
+          >View more
+        </button></a
+      >
     </div>
   </div>
 </section>
