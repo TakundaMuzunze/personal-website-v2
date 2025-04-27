@@ -1,5 +1,12 @@
 [
   {
+    "image": "/flickerly.png",
+    "title": "Flickerly",
+    "description": "Movie discovery web application using SvelteKit and TypeScript, leveraging the TMDB API for dynamic movie data.",
+    "skillTags": ["Sveltekit", "Typescript", "Tailwind CSS"],
+    "liveDemo": "https://flickerly.netlify.app"
+  },
+  {
     "image": "/kickTrivia.png",
     "title": "KIckTrivia",
     "description": "A fast-paced football quiz game to test your football knowledge across diverse categories and challenge yourself to become a trivia champion.",
@@ -16,3 +23,4 @@
     "repo": "https://github.com/TakundaMuzunze/Taskflow?tab=readme-ov-file"
   }
 ]
+
