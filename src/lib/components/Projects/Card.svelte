@@ -11,7 +11,11 @@
         console.error('Error fetching projects. Please refresh page and try again.');
       }
 
-      projectInfo = await response.json();
+      const data = await response.json();
+
+      projectInfo = data.slice(0, 2);
+
+      return projectInfo;
     } catch (error) {
       console.error('Error fetching projects. Please refresh page and try again.', error);
     }
