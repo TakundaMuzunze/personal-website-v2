@@ -8,7 +8,6 @@ A modern, responsive personal portfolio website built with SvelteKit and TypeScr
 - 📱 Fully responsive layout
 - ⚡ Fast and performant
 - 🎭 Smooth animations and transitions
-- 🌙 Dark theme optimized
 - 🔍 SEO friendly
 
 ## Tech Stack
