@@ -1,4 +1,5 @@
 <script lang="ts">
+  import type { Experience } from '$lib/types';
   import { onMount } from 'svelte';
   import { register } from 'swiper/element/bundle';
   register();
@@ -33,24 +34,22 @@
     }
 
     swiperEl.addEventListener('swiper', () => {
-      console.log('Swiper initialized:', swiperEl.swiper);
       activeIndex = swiperEl.swiper.realIndex;
 
       swiperEl.swiper.on('slideChange', () => {
         activeIndex = swiperEl.swiper.realIndex;
-        console.log('Slide changed, new index:', activeIndex);
       });
     });
   });
 </script>
 
-<div class="relative flex w-full flex-col-reverse items-start gap-8 md:flex-row md:gap-36 lg:gap-52">
+<div class="relative flex w-full flex-col-reverse items-center gap-8 md:flex-row md:gap-36">
   <!-- Timeframe Navigation (Top on Mobile, Left on Desktop) -->
   <div class="order-1 flex flex-row gap-4 md:order-none md:flex-col md:gap-8">
     {#each previousExperiences as experience, i}
       <button
         onclick={() => scrollToSlide(i)}
-        class="cursor-pointer rounded-lg px-2 py-2 text-sm whitespace-nowrap transition duration-300 md:px-4 lg:text-base"
+        class="min-w-24 cursor-pointer rounded-lg px-2 py-2 text-sm whitespace-nowrap transition duration-300 md:px-4 lg:text-base"
         class:bg-main-btn={activeIndex === i}
         class:bg-white={activeIndex !== i}
         class:text-white={activeIndex === i}
@@ -69,8 +68,12 @@
   >
     {#each previousExperiences as experience}
       <swiper-slide class="bg-card-bg relative flex h-full w-full flex-col justify-between gap-5 rounded-xl p-6 shadow-lg hover:shadow-2xl">
-        <h3 class="text-heading-text text-lg font-semibold md:text-xl">{experience.title}</h3>
-        <p class="text-heading-text">{experience.companyName}</p>
+        <h3 class="text-heading-text text-xl font-bold md:text-2xl">
+          {experience.title}
+        </h3>
+        <p class="text-main-btn text-sm font-semibold tracking-wide uppercase">
+          {experience.companyName}
+        </p>
         <p class="text-body-text lg:text-lg">{experience.description}</p>
 
         <div class="flex flex-wrap gap-2">
@@ -84,3 +87,4 @@
     {/each}
   </swiper-container>
 </div>
+

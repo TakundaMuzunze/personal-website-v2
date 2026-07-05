@@ -41,9 +41,18 @@
         },
         '-=0.4',
       )
+      .from(
+        '.hero-summary',
+        {
+          y: 50,
+          opacity: 0,
+          duration: 0.8,
+        },
+        '-=0.4',
+      )
 
       // Button fade in
-      .from('.hero-button', {
+      .from('.hero-buttons', {
         opacity: 0,
         duration: 0.5,
       })
@@ -65,17 +74,38 @@
   <div class="flex flex-col-reverse gap-10 md:flex-row md:gap-40">
     <div class="flex max-w-[468px] flex-col gap-3 lg:gap-5">
       <h2 class="hero-greeting text-body-text text-lg lg:text-2xl">Hello there<span class="wave-emoji inline-block">👋</span>. My name is,</h2>
+
       <h1 class="hero-name text-heading-text overflow-hidden text-3xl font-bold whitespace-nowrap lg:text-5xl">Takunda Muzunze</h1>
-      <p class="hero-tagline text-body-text text-lg lg:text-2xl">I design and develop user-centric experiences</p>
-      <a href="#contact">
-        <button
-          class="hero-button bg-main-btn w-fit transform cursor-pointer rounded-xl px-4 py-3 font-semibold text-white transition-transform duration-300 hover:scale-105 lg:text-lg"
-          >Get in touch</button
-        >
-      </a>
+
+      <p class="hero-tagline text-body-text text-lg lg:text-2xl">
+        Frontend Software Engineer building production software for major consumer brands.
+      </p>
+
+      <p class="hero-summary text-body-text lg:text-lg">
+        I specialize in TypeScript, Svelte and modern frontend engineering, creating workflow automation tools, interactive customer experiences and
+        performant web applications.
+      </p>
+
+      <div class="hero-buttons flex flex-col items-start justify-start gap-6 md:flex-row">
+        <a href="#work">
+          <button
+            class="bg-main-btn w-fit transform cursor-pointer rounded-xl px-4 py-3 font-semibold text-white transition-transform duration-300 hover:scale-105 lg:text-lg"
+          >
+            View my work
+          </button>
+        </a>
+        <a href="#contact">
+          <button
+            class=" border-main-btn text-main-btn w-fit transform cursor-pointer rounded-xl border px-4 py-3 font-semibold transition-transform duration-300 hover:scale-105 lg:text-lg"
+          >
+            Get in touch
+          </button>
+        </a>
+      </div>
     </div>
     <div class="hero-image">
       <img class="size-48 lg:size-72" src="/headshot.svg" alt="Head shot" />
     </div>
   </div>
 </section>
+

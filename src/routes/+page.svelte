@@ -7,10 +7,12 @@
 
   import ContactSection from '$lib/components/ContactSection/ContactSection.svelte';
   import Footer from '$lib/components/Footer/Footer.svelte';
+  import CommercialWork from '$lib/components/Experience/CommercialWork.svelte';
 </script>
 
-<main class="min-h-screen scroll-smooth">
+<main class="min-h-screen space-y-20 scroll-smooth">
   <Header />
+
   <section id="home">
     <Hero />
   </section>
@@ -27,9 +29,14 @@
     <Projects />
   </section>
 
+  <section id="commercial">
+    <CommercialWork />
+  </section>
+
   <section id="contact">
     <ContactSection />
   </section>
 
   <Footer />
 </main>
+

@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Campaign Asset Workflow Automation",
+    "category": "Internal Tooling",
+    "description": "Designed and developed an Electron desktop application that helps internal teams organise hundreds of campaign assets. Users can create folder structures, configure string-matching rules, preview generated folders in File Explorer and export organised assets to a chosen location.",
+    "impact": "Automated a previously manual campaign asset workflow.",
+    "tags": ["SvelteKit", "Electron", "Node.js", "File System APIs"]
+  },
+  {
+    "title": "Asset Management Application",
+    "category": "Workflow Optimisation",
+    "description": "Built an Electron-based internal asset management application to streamline production workflows. Added automated testing with Vitest and Playwright alongside Azure Pipelines with build caching.",
+    "impact": "Reduced manual asset processing requirements by 90%.",
+    "tags": ["Electron", "Node.js", "Playwright", "Vitest", "Azure Pipelines"]
+  },
+  {
+    "title": "Interactive Product Finder",
+    "category": "Customer Experience",
+    "description": "Developed an interactive product recommendation experience for Croydex, combining dynamic filtering, guided measurement flows, AR model viewing and analytics instrumentation across desktop and mobile.",
+    "impact": "Helped customers navigate product selection with clearer guidance.",
+    "tags": ["Svelte", "TypeScript", "Three.js", "Analytics"]
+  },
+  {
+    "title": "In-store Video Experience",
+    "category": "Retail Experience",
+    "description": "Engineered a mobile-first story-style video experience for Currys' in-store QR journey, with gesture navigation, video playback controls and event tracking for a smoother product discovery flow.",
+    "impact": "Created an interactive product experience for mobile retail journeys.",
+    "tags": ["Svelte", "TypeScript", "Gestures", "Analytics"]
+  },
+  {
+    "title": "Retail Product Experiences",
+    "category": "Production Web Delivery",
+    "description": "Delivered responsive product pages and static content experiences for major UK retailer platforms, with a focus on performance, accessibility and consistent behaviour across devices.",
+    "impact": "Supported product launches and customer education journeys.",
+    "tags": ["Astro", "Responsive Design", "Accessibility", "Performance"]
+  }
+]

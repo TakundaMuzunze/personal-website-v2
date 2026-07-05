@@ -46,7 +46,7 @@
   });
 </script>
 
-<section class="contact-section mx-auto flex min-h-screen max-w-5xl snap-start items-center p-5">
+<section class="contact-section een mx-auto flex max-w-5xl snap-start items-center p-5">
   <div class="flex w-full flex-col items-start justify-start gap-10 lg:gap-20">
     <div class="contact-content flex max-w-2xl flex-col gap-3 lg:gap-5">
       <h3 class="text-body-text font-semibold uppercase md:text-lg lg:text-xl">Reaching out</h3>
@@ -66,3 +66,4 @@
     </div>
   </div>
 </section>
+

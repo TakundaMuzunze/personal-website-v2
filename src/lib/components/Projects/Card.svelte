@@ -1,4 +1,5 @@
 <script lang="ts">
+  import type { ProjectCard } from '$lib/types';
   import { onMount } from 'svelte';
 
   let projectInfo: ProjectCard[] = [];
@@ -13,7 +14,7 @@
 
       const data = await response.json();
 
-      projectInfo = data.slice(0, 2);
+      projectInfo = data.slice(0, 1);
 
       return projectInfo;
     } catch (error) {
