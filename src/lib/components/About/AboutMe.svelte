@@ -3,7 +3,6 @@
   import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
   import { onMount } from 'svelte';
 
-  // Register ScrollTrigger plugin
   gsap.registerPlugin(ScrollTrigger);
 
   onMount(() => {
@@ -34,18 +33,21 @@
   });
 </script>
 
-<section class="about-section mx-auto flex min-h-screen max-w-5xl items-center justify-center p-5">
+<section class="about-section een mx-auto flex max-w-5xl items-center justify-center p-5">
   <div class="flex flex-col items-center gap-10 md:flex-row lg:gap-20">
     <div class="content-left flex max-w-[468px] flex-col gap-3 lg:gap-5">
-      <h3 class="text-body-text font-semibold uppercase md:text-lg lg:text-xl">About me</h3>
-      <h2 class="text-heading-text text-2xl font-bold capitalize md:text-3xl lg:text-4xl">The developer behind the screen</h2>
+      <h3 class="text-body-text font-semibold uppercase md:text-lg lg:text-xl">Frontend Software Engineer</h3>
+
+      <h2 class="text-heading-text text-2xl font-bold capitalize md:text-3xl">Building production software for major consumer brands</h2>
+
       <p class="text-body-text lg:text-lg">
-        Hello, I'm Takunda! A software developer passionate about crafting smooth, accessible, and user-friendly web experiences. I love turning ideas
-        into intuitive and engaging applications.
+        I'm Takunda, a frontend software engineer specialising in TypeScript, Svelte and modern frontend engineering. I build performant web
+        applications, workflow automation tools and interactive digital experiences that solve real business problems.
       </p>
+
       <p class="text-body-text lg:text-lg">
-        My focus is on building clean, performant interfaces that make the web a joy to use—whether it's refining animations, optimizing user flows,
-        or experimenting with new UI patterns
+        I've delivered production work for brands including Samsung, Currys and Croydex, ranging from customer-facing product experiences to internal
+        tooling that reduced manual asset processing by 90%.
       </p>
     </div>
     <div class="about-image w-full max-w-[300px] md:max-w-[400px] lg:max-w-[468px]">
@@ -57,3 +59,4 @@
     </div>
   </div>
 </section>
+

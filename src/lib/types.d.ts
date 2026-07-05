@@ -1,4 +1,4 @@
-type Experience = {
+export type Experience = {
   title: string;
   timeframe: string;
   companyName: string;
@@ -6,7 +6,7 @@ type Experience = {
   tags: string;
 };
 
-type ProjectCard = {
+export type ProjectCard = {
   image: string;
   title: string;
   description: string;
@@ -14,3 +14,4 @@ type ProjectCard = {
   liveDemo: string;
   repo: string;
 };
+
