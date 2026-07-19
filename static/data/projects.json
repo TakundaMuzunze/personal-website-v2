@@ -2,9 +2,10 @@
   {
     "image": "/flickerly.png",
     "title": "Flickerly",
-    "description": "Movie discovery web application using SvelteKit and TypeScript, leveraging the TMDB API for dynamic movie data.",
-    "skillTags": ["Sveltekit", "Typescript", "Tailwind CSS"],
-    "liveDemo": "https://flickerly.netlify.app"
+    "description": "A production-style movie discovery platform built with SvelteKit and TypeScript, featuring secure API integration, dynamic genre routing, movie details, watchlist functionality, provider discovery, Vitest unit tests, Playwright E2E tests and GitHub Actions CI.",
+    "skillTags": ["SvelteKit", "TypeScript", "TMDB API", "Playwright", "Vitest", "GitHub Actions"],
+    "liveDemo": "https://flickerly.netlify.app",
+    "repo": "https://github.com/TakundaMuzunze/Flickerly"
   },
   {
     "image": "/kickTrivia.png",
